@@ -44,6 +44,7 @@ npm install
 3. Create a .env file in the root directory and add your Contentful credentials:
 
 CONTENTFUL_SPACE_ID=your-space-id
+
 CONTENTFUL_ACCESS_TOKEN=your-access-token
 
 ------------------------------------------------------------------------
