@@ -11,7 +11,7 @@ yarn-error.log*
 
 # Environment variables
 .env
-
+.env.local
 # Mac system files
 .DS_Store
 
@@ -20,3 +20,5 @@ yarn-error.log*
 
 # .idea (if you're using JetBrains IDEs)
 .idea/
+
+
