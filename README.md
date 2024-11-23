@@ -56,6 +56,6 @@ Visit http://localhost:3000 to view the site locally.
 ------------------------------------------------------------------------
 
 
-##Contributing
+### Contributing
 
 We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel free to fork the repository, create a branch, and submit a pull request.
