@@ -29,28 +29,33 @@ Our product line features a wide range of bracelets, made from carefully selecte
 The website features a landing page with a banner and a list of products displayed below it. Users can browse through the products, add them to their cart, and proceed to a simple form where they can submit their order details (name, email, etc.). The order information is then sent to the shop owner via email.
 
 ## Getting Started
-
+------------------------------------------------------------------------
 1. Clone the repository:
 
 git clone https://github.com/JB-VERGARA/aristelle-fashion.git
 
-
+------------------------------------------------------------------------
 2. Install dependencies:
 
 cd aristelle-fashion
 npm install
 
+------------------------------------------------------------------------
 3. Create a .env file in the root directory and add your Contentful credentials:
 
 CONTENTFUL_SPACE_ID=your-space-id
 CONTENTFUL_ACCESS_TOKEN=your-access-token
 
+------------------------------------------------------------------------
 4. Run the development server:
 
 npm run dev
 
 Visit http://localhost:3000 to view the site locally.
 
-Contributing
+------------------------------------------------------------------------
+
+
+##Contributing
 
 We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel free to fork the repository, create a branch, and submit a pull request.
