@@ -134,3 +134,188 @@
   }
 }
 
+/* Global Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px; /* Slightly slimmer padding for an elegant look */
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1); /* Subtle but elegant shadow */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #f0f0f0; /* Light border for subtle separation */
+}
+
+/* Logo and Business Info */
+.logo-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and business name */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 50px; /* Increased size for logo */
+  height: 50px;
+  border-radius: 50%; /* Round logo for modern touch */
+  object-fit: cover;
+  margin-right: 10px; /* Space between logo and business name */
+}
+
+.business-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 600;
+}
+
+.business-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.business-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  padding-top: 0.3rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Keep nav items aligned to the right */
+  flex-grow: 1; /* Allow nav to take up available space */
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Add spacing between nav items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1rem; /* Consistent size for nav links */
+}
+
+.nav-links li a {
+  color: #333;
+  font-weight: 500; /* Medium weight for a refined look */
+  padding: 8px 15px; /* Subtle padding for comfortable clicking */
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Slight spacing for modern feel */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Navbar Links */
+.nav-links li a:hover {
+  color: #f1c40f; /* Elegant yellow hover effect */
+  transform: translateY(-2px); /* Slight lift for elegance */
+}
+
+/* Default Cart Styling */
+.cart-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 30px; /* Space between last nav item and cart */
+}
+
+.cart-nav li {
+  list-style: none; /* Remove the dot or bullet from cart item */
+}
+
+.cart-nav li a.cart-icon {
+  color: #333;
+  font-size: 1.4rem; /* Size of the cart icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px; /* Padding for better alignment */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Cart Icon Hover Effect (Removed glow and shadow) */
+.cart-nav li a.cart-icon:hover {
+  color: #f1c40f; /* Yellow hover effect */
+  transform: translateY(-2px); /* Slight lift to match nav links */
+  box-shadow: none; /* No glow */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Remove cart from navbar */
+  .cart-nav {
+    display: none;
+  }
+
+  /* Floating Cart at the bottom-right */
+  .floating-cart {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background-color: #f1c40f; /* Yellow background */
+    color: #fff;
+    border-radius: 50%; /* Circular shape */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Remove floating cart on large screens */
+  @media (min-width: 768px) {
+    .floating-cart {
+      display: none;
+    }
+  }
+
+  /* Remove hover effect on floating cart */
+  .floating-cart:hover {
+    transform: none;
+  }
+}
+
+/* Mobile Responsiveness - Make header stack vertically on small screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .logo-info {
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .cart-nav {
+    margin-top: 15px;
+  }
+}
