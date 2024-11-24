@@ -1,32 +1,22 @@
-// src/pages/index.js (or wherever you're displaying the products)
-import { useEffect, useState } from 'react';
-import { getProducts } from '../lib/contentful';
-import ProductDescription from '../components/ProductDescription';
+import { getProducts } from '@/lib/contentful';
+import ProductCard from '@/components/ProductCard';
 
-const Home = () => {
-  const [products, setProducts] = useState([]);
+export async function getStaticProps() {
+  const products = await getProducts();
+  return {
+    props: { products },
+  };
+}
 
-  useEffect(() => {
-    // Fetch products when component mounts
-    async function fetchProducts() {
-      const products = await getProducts();
-      setProducts(products);
-    }
-
-    fetchProducts();
-  }, []);
-
+export default function Home({ products }) {
   return (
     <div>
       <h1>Our Products</h1>
-      {products.map((product) => (
-        <div key={product.sys.id}>
-          <h2>{product.fields.productName}</h2>
-          <ProductDescription description={product.fields.productDescription} />
-        </div>
-      ))}
+      <div className="product-grid">
+        {products.map((product) => (
+          <ProductCard key={product.sys.id} product={product} />
+        ))}
+      </div>
     </div>
   );
-};
-
-export default Home;
+}

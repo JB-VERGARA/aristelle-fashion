@@ -1,60 +1,136 @@
-/* src/styles/globals.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 1 fr per card, with min 250px */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.entry-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.colors {
+  margin-bottom: 1rem;
+}
+
+.color-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 4px;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #6c757d;
+}
+
+/* Action Buttons Styling */
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Stacks the buttons vertically */
+  gap: 10px; /* Adds spacing between the buttons */
+  margin-top: 1rem;
+}
+
+.view-details-button,
+.add-to-cart-button {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensures the buttons take up full width */
+}
+
+.view-details-button {
+  background-color: #f06292; /* Pink */
+  color: white;
+}
+
+.view-details-button:hover {
+  background-color: #ec407a;
+}
+
+.add-to-cart-button {
+  background-color: #ffeb3b; /* Yellow */
+  color: #333;
+}
+
+.add-to-cart-button:hover {
+  background-color: #fdd835;
+}
+
+/* Default grid style - larger screens */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+  gap: 1rem; /* Add gap between items */
+  margin: 1rem;
+}
+
+/* Medium screens (up to 1200px wide) - 2 columns */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns on medium screens */
   }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 20px;
+}
+
+/* Small screens (up to 768px wide) - 1 column */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
   }
-  
-  p {
-    text-align: center;
-    font-size: 1.25rem;
-    color: #555;
-  }
-  
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .product-card {
-    border: 1px solid #ddd;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    padding: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 16px;
-  }
-  
-  .product-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-  
-  .product-card p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .product-card .price {
-    font-size: 1.25rem;
-    color: #333;
-    margin-top: 8px;
-  }
-  
+}
+
