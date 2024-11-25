@@ -257,44 +257,58 @@
   box-shadow: none; /* No glow */
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  /* Remove cart from navbar */
-  .cart-nav {
-    display: none;
-  }
-
-  /* Floating Cart at the bottom-right */
   .floating-cart {
     position: fixed;
     right: 10px;
     bottom: 20px;
-    background-color: #f1c40f; /* Yellow background */
-    color: #fff;
-    border-radius: 50%; /* Circular shape */
+    background-color: #f1c40f; /* Gold color */
+    color: #fff; /* White icon */
+    border-radius: 50%;
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
     cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+    text-decoration: none; /* Removes underline if it's a link */
+    border: none; /* Ensures no border */
+  }
+  
+  .floating-cart:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  
+  .floating-cart a {
+    text-decoration: none; /* Remove underline if link is inside */
+    color: inherit; /* Inherit color for consistency */
   }
 
-  /* Remove floating cart on large screens */
-  @media (min-width: 768px) {
-    .floating-cart {
-      display: none;
-    }
+  .cart-nav {
+    display: none; /* Hide navbar cart icon */
   }
+}
+
+@media (min-width: 769px) {
+  .floating-cart {
+    display: none; /* Hide floating cart on larger screens */
+  }
+}
+/* Remove floating cart on larger screens */
+@media (min-width: 769px) {
+  .floating-cart {
+    display: none;
+  }
+}
 
   /* Remove hover effect on floating cart */
   .floating-cart:hover {
     transform: none;
   }
-}
+
 
 /* Mobile Responsiveness - Make header stack vertically on small screens */
 @media (max-width: 768px) {
