@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { getProducts, getHomepage } from '@/lib/contentful';
 import ProductCard from '@/components/ProductCard';
 import Header from '@/components/Header';
+import Footer from '../components/Footer';
 
 export async function getStaticProps() {
   const products = await getProducts();
@@ -33,6 +34,7 @@ export default function Home({ products, businessName, businessDescription, logo
           <ProductCard key={product.sys.id} product={product} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
