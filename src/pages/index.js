@@ -1,13 +1,13 @@
-import { getProducts, getHomepage } from '@/lib/contentful'; // Import both functions
+// src/pages/index.js
+
+import Head from 'next/head';
+import { getProducts, getHomepage } from '@/lib/contentful';
 import ProductCard from '@/components/ProductCard';
-import Header from '@/components/Header'; // Assuming we have a Header component
-import Image from 'next/image';
+import Header from '@/components/Header';
 
 export async function getStaticProps() {
-  const products = await getProducts(); // Fetch product data
-  const homepageData = await getHomepage(); // Fetch homepage data
-
-  // Destructure homepage fields
+  const products = await getProducts();
+  const homepageData = await getHomepage();
   const { businessName, businessDescription, logo } = homepageData;
 
   return {
