@@ -1,9 +1,10 @@
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 1 fr per card, with min 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensure flexible columns */
   gap: 1rem;
   padding: 1rem;
+  align-items: stretch; /* Ensures grid items are stretched to fill the available space */
 }
 
 .product-card {
@@ -12,6 +13,11 @@
   padding: 1rem;
   text-align: center;
   transition: transform 0.2s;
+  min-height: 400px; /* Use min-height instead of height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between elements */
+  overflow: hidden; /* Prevent overflow of content */
 }
 
 .product-card:hover {
@@ -112,13 +118,7 @@
   background-color: #fdd835;
 }
 
-/* Default grid style - larger screens */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
-  gap: 1rem; /* Add gap between items */
-  margin: 1rem;
-}
+
 
 /* Medium screens (up to 1200px wide) - 2 columns */
 @media (max-width: 1200px) {
@@ -404,6 +404,103 @@
     font-size: 0.85rem; /* Slightly smaller text for mobile */
   }
 }
+
+/* Add these to global.css */
+.slick-prev,
+.slick-next {
+  font-size: 30px;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev, .slick-next {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
+
+/* Banner Styling */
+.banner {
+  max-width: 100%;
+  padding: 1.5rem 0; /* Reduced padding for smaller banner */
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #f1f1f1; /* Subtle bottom border */
+}
+
+/* Banner image styling */
+.banner-slide {
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 400px; /* Set a fixed height for a smaller banner */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 8px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Our Products Heading */
+.products-heading {
+  text-align: center; /* Center the heading */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold;
+  margin: 2rem 0; /* Add spacing around the heading */
+  color: #333; /* Dark text color */
+  text-transform: uppercase; /* Make the heading uppercase */
+  letter-spacing: 2px; /* Add slight letter spacing for modern look */
+}
+
+.products-heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #f1c40f; /* Gold underline */
+  margin: 0.5rem auto; /* Center the underline */
+  border-radius: 2px;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .banner-image {
+    height: 250px; /* Smaller height for mobile devices */
+  }
+
+  .products-heading {
+    font-size: 2rem; /* Slightly smaller text for mobile */
+  }
+}
+
+
+
 
 
 
