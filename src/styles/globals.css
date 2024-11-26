@@ -457,6 +457,17 @@
   border-radius: 8px;
 }
 
+/* Mobile Styling for Banner */
+@media (max-width: 768px) {
+  .banner {
+    padding: 0.8rem 0; /* Adjust padding for mobile */
+  }
+
+  .banner-image {
+    height: 200px; /* Make the banner shorter and more rectangular on mobile */
+  }
+}
+
 /* Fade-in animation */
 @keyframes fadeIn {
   0% {
@@ -466,6 +477,27 @@
     opacity: 1;
   }
 }
+/* Our Products Heading */
+.products-heading {
+  text-align: center; /* Center the heading */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold;
+  margin: 2rem 0; /* Add spacing around the heading */
+  color: #333; /* Dark text color */
+  text-transform: uppercase; /* Make the heading uppercase */
+  letter-spacing: 2px; /* Add slight letter spacing for modern look */
+}
+
+.products-heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #f1c40f; /* Gold underline */
+  margin: 0.5rem auto; /* Center the underline */
+  border-radius: 2px;
+}
+
 
 /* General Container Styling */
 .product-details-container {
