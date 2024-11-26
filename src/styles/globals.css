@@ -5,6 +5,7 @@
   gap: 1rem;
   padding: 1rem;
   align-items: stretch; /* Ensures grid items are stretched to fill the available space */
+  margin-bottom: 40px; /* Add margin to the bottom to create space for carousel dots */
 }
 
 .product-card {
@@ -428,12 +429,27 @@
 }
 
 .slick-dots {
-  bottom: 10px;
+  position: absolute; /* Position it above other elements */
+  bottom: 20px; /* Adjust the space from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the dots horizontally */
+  z-index: 10; /* Ensure it appears above other elements */
 }
 
 .slick-dots li button:before {
   font-size: 12px;
-  color: white;
+  color: white; /* White color for visibility */
+}
+
+/* Ensure the dots are not blocked on mobile */
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: 15px; /* Adjust the bottom for mobile view */
+  }
+
+  .product-grid {
+    margin-bottom: 50px; /* Increased margin to ensure enough space for dots on mobile */
+  }
 }
 
 /* Banner Styling */
@@ -459,9 +475,6 @@
 
 /* Mobile Styling for Banner */
 @media (max-width: 768px) {
-  .banner {
-    padding: 0.8rem 0; /* Adjust padding for mobile */
-  }
 
   .banner-image {
     height: 200px; /* Make the banner shorter and more rectangular on mobile */
@@ -486,6 +499,7 @@
   color: #333; /* Dark text color */
   text-transform: uppercase; /* Make the heading uppercase */
   letter-spacing: 2px; /* Add slight letter spacing for modern look */
+  margin-top: 10px;
 }
 
 .products-heading::after {
