@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaInfoCircle, FaShoppingCart } from 'react-icons/fa'; // Importing icons
+import { useRouter } from 'next/router'; // Import useRouter
+
 
 // Function to generate a color from the tag
 const generateColor = (tag) => {
@@ -66,7 +68,10 @@ const ProductCard = ({ product }) => {
       featuredImage 
     } 
   } = product;
-
+  const router = useRouter();
+  const handleViewDetails = () => {
+    router.push(`/product/${product.sys.id}`); // Navigate to dynamic route
+  };
   return (
     <div className="product-card">
       {/* Product Image */}
@@ -138,9 +143,9 @@ const ProductCard = ({ product }) => {
       {/* Action Buttons */}
       <div className="action-buttons">
         {/* View Details Button */}
-        <button className="view-details-button">
-          <FaInfoCircle style={{ marginRight: '8px' }} /> View Details
-        </button>
+        <button className="view-details-button" onClick={handleViewDetails}>
+        <FaInfoCircle style={{ marginRight: '8px' }} /> View Details
+      </button>
 
         {/* Add to Cart Button */}
         <button className="add-to-cart-button">

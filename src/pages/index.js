@@ -1,7 +1,7 @@
 // src/pages/index.js
 
 import Head from 'next/head';
-import { getProducts, getHomepage } from '@/lib/contentful';
+import { getProducts, getHomepage, } from '@/lib/contentful';
 import ProductCard from '@/components/ProductCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
