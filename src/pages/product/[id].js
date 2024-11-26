@@ -92,7 +92,7 @@ const ProductDetails = ({ product, businessName, logo }) => {
               <strong>Location:</strong> {location}
             </p>
             <div className="product-action-buttons">
-              <button className="product-add-to-cart-button">Add to Cart</button>
+              <button className="product-add-to-cart-button"><FaShoppingCart style={{ marginRight: '8px' }} /> Add to Cart</button>
               <button
                 className="product-back-to-shop-button"
                 onClick={() => router.push('/')}
