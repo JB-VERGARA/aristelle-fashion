@@ -310,31 +310,11 @@
     transform: none;
   }
 
-
-/* Mobile Responsiveness - Make header stack vertically on small screens */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px 20px;
+  @media (max-width: 768px) {
+    .business-name {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
   }
-
-  .logo-info {
-    margin-bottom: 10px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  .cart-nav {
-    margin-top: 15px;
-  }
-}
-
 /* Footer Styling */
 .footer {
   background-color: white;
@@ -663,6 +643,64 @@
   color: #777;
 }
 
+/* Burger Menu Button Styling */
+.burger-menu {
+  display: none; /* Hidden by default for larger screens */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's above the menu */
+}
+
+.burger-menu span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Open State for Burger Menu */
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Menu Styling */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex; /* Show burger menu on smaller screens */
+  }
+
+  .navbar {
+    display: none; /* Hide navbar by default */
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navbar.show-menu {
+    display: flex; /* Show menu when burger is toggled */
+  }
+}
 
 
 
