@@ -94,7 +94,7 @@ const ProductDetails = ({ product, businessName, logo }) => {
             </p>
             <div className="product-action-buttons">
               <button className="product-add-to-cart-button" onClick={() => window.open('https://m.me/61561870003784', '_blank')}>
-                <FaFacebookMessenger style={{ marginRight: '7px' }} /> Chat With Us</button>
+                <FaFacebookMessenger/> Chat With Us</button>
               <button
                 className="product-back-to-shop-button"
                 onClick={() => router.push('/')}
