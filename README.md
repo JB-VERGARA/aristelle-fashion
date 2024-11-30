@@ -26,7 +26,7 @@ Our product line features a wide range of bracelets, made from carefully selecte
 
 ## Project Overview
 
-The website features a landing page with a banner and a list of products displayed below it. Users can browse through the products, add them to their cart, and proceed to a simple form where they can submit their order details (name, email, etc.). The order information is then sent to the shop owner via email.
+The website serves as a dynamic landing page designed to represent the brand and its products effectively. It features a visually appealing banner at the top, followed by a well-organized display of products to showcase the offerings. Visitors can explore the product catalog in detail. The site also includes a dedicated "About Us" section to highlight the business's mission and values, along with a "Contact Us" page to facilitate seamless communication with potential customers.
 
 ## Getting Started
 ------------------------------------------------------------------------

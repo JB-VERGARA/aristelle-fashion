@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {FaShoppingCart } from 'react-icons/fa'; // Importing icons
+import {FaFacebookMessenger} from 'react-icons/fa'; // Importing icons
 
 export async function getStaticPaths() {
   const products = await getProducts();
@@ -93,7 +93,8 @@ const ProductDetails = ({ product, businessName, logo }) => {
               <strong>Location:</strong> {location}
             </p>
             <div className="product-action-buttons">
-              <button className="product-add-to-cart-button"><FaShoppingCart style={{ marginRight: '7px' }} /> Add to Cart</button>
+              <button className="product-add-to-cart-button" onClick={() => window.open('https://m.me/61561870003784', '_blank')}>
+                <FaFacebookMessenger style={{ marginRight: '7px' }} /> Chat With Us</button>
               <button
                 className="product-back-to-shop-button"
                 onClick={() => router.push('/')}

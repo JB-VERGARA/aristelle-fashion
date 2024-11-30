@@ -1,3 +1,4 @@
+import { FaFacebookMessenger } from 'react-icons/fa'; // Importing icons
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -66,9 +67,14 @@ const Header = ({ businessName, businessDescription, logo }) => {
         {/* Cart Icon */}
         <ul className="cart-nav">
           <li>
-            <a href="/cart" className="cart-icon">
-              🛒
-            </a>
+          <a 
+               href="https://m.me/61561870003784" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className="cart-icon"
+          >
+          <FaFacebookMessenger style={{ marginRight: '8px' }} />
+          </a>
           </li>
         </ul>
       </nav>

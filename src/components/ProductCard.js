@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInfoCircle, FaShoppingCart } from 'react-icons/fa'; // Importing icons
+import { FaInfoCircle, FaFacebookMessenger } from 'react-icons/fa'; // Importing icons
 import { useRouter } from 'next/router'; // Import useRouter
 
 
@@ -148,8 +148,11 @@ const ProductCard = ({ product }) => {
       </button>
 
         {/* Add to Cart Button */}
-        <button className="add-to-cart-button">
-          <FaShoppingCart style={{ marginRight: '8px' }} /> Add to Cart
+        <button
+            className="add-to-cart-button"
+            onClick={() => window.open('https://m.me/61561870003784', '_blank')}
+            >
+             <FaFacebookMessenger style={{ marginRight: '8px' }} /> Chat With Us
         </button>
       </div>
     </div>
