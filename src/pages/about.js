@@ -35,7 +35,7 @@ const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
           <h2>Meet Our Team</h2>
           <div className="team-members">
             <div className="team-member">
-              <img src="\images\founder.jpg" alt="Team Member 1" />
+              <img src="\images\founder1.jpg" alt="Team Member 1" />
               <h3>Niña Mae C. Ramirez</h3>
               <p>Founder & Designer</p>
             </div>
