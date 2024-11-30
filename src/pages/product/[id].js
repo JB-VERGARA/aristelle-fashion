@@ -96,10 +96,8 @@ const ProductDetails = ({ product, businessName, logo }) => {
               <button
                 className="product-add-to-cart-button"
                 onClick={() => {
-                  const encodedProductName = encodeURIComponent(productName);
                   const preFilledMessage = encodeURIComponent(`Hi, I'm interested in the product: ${productName}`);
-                  const chatUrl = `https://m.me/61561870003784?ref=${encodedProductName}&message=${preFilledMessage}`;
-              
+                  const chatUrl = `https://m.me/61561870003784?message=${preFilledMessage}`;
                   window.open(chatUrl, '_blank');
                 }}
               >

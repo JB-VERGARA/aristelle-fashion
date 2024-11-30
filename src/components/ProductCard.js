@@ -154,7 +154,6 @@ const ProductCard = ({ product }) => {
               const encodedProductName = encodeURIComponent(productName);
               const preFilledMessage = encodeURIComponent(`Hi, I'm interested in the product: ${productName}`);
               const chatUrl = `https://m.me/61561870003784?ref=${encodedProductName}&message=${preFilledMessage}`;
-          
               window.open(chatUrl, '_blank');
             }}
             >
