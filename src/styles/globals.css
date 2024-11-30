@@ -890,7 +890,7 @@
 @media (max-width: 480px) {
   .contact-form-wrapper input,
   .contact-form-wrapper textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 0.9rem;
   }
