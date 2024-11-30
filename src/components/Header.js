@@ -87,7 +87,7 @@ const Header = ({ businessName, businessDescription, logo }) => {
                rel="noopener noreferrer" 
                className="cart-icon"
           >
-          <FaFacebookMessenger style={{ marginRight: '8px' }} />
+          <FaFacebookMessenger/>
           </a>
       </div>
     </header>
