@@ -81,9 +81,14 @@ const Header = ({ businessName, businessDescription, logo }) => {
 
       {/* Floating Cart - Displayed only on mobile */}
       <div className="floating-cart">
-        <a href="/cart" className="cart-icon">
-          🛒
-        </a>
+          <a 
+               href="https://m.me/61561870003784" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className="cart-icon"
+          >
+          <FaFacebookMessenger style={{ marginRight: '8px' }} />
+          </a>
       </div>
     </header>
   );
