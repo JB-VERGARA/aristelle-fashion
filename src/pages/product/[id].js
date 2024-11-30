@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {FaFacebookMessenger} from 'react-icons/fa'; // Importing icons
+import {FaFacebookMessenger, FaStore} from 'react-icons/fa'; // Importing icons
 
 export async function getStaticPaths() {
   const products = await getProducts();
@@ -99,7 +99,7 @@ const ProductDetails = ({ product, businessName, logo }) => {
                 className="product-back-to-shop-button"
                 onClick={() => router.push('/')}
               >
-                Back to Shop
+               <FaStore/> Back to Shop
               </button>
             </div>
           </div>

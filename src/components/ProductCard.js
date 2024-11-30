@@ -152,7 +152,7 @@ const ProductCard = ({ product }) => {
             className="add-to-cart-button"
             onClick={() => window.open('https://m.me/61561870003784', '_blank')}
             >
-             <FaFacebookMessenger/> Chat With Us
+             <FaFacebookMessenger style={{ marginRight: '8px' }}/> Chat With Us
         </button>
       </div>
     </div>
