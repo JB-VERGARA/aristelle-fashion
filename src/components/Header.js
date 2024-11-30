@@ -11,8 +11,8 @@ const Header = ({ businessName, businessDescription, logo }) => {
 
   const navLinks = [
     { href: "/", label: "Shop" },
-    { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
