@@ -93,13 +93,24 @@ const ProductDetails = ({ product, businessName, logo }) => {
               <strong>Location:</strong> {location}
             </p>
             <div className="product-action-buttons">
-              <button className="product-add-to-cart-button" onClick={() => window.open('https://m.me/61561870003784', '_blank')}>
-                <FaFacebookMessenger/> Chat With Us</button>
+              <button
+                className="product-add-to-cart-button"
+                onClick={() => {
+                  const encodedProductName = encodeURIComponent(productName);
+                  const preFilledMessage = encodeURIComponent(`Hi, I'm interested in the product: ${productName}`);
+                  const chatUrl = `https://m.me/61561870003784?ref=${encodedProductName}&message=${preFilledMessage}`;
+              
+                  window.open(chatUrl, '_blank');
+                }}
+              >
+                <FaFacebookMessenger /> Chat With Us
+              </button>
+
               <button
                 className="product-back-to-shop-button"
                 onClick={() => router.push('/')}
               >
-               <FaStore/> Back to Shop
+               <FaStore style={{ marginRight: '8px' }} /> Back to Shop
               </button>
             </div>
           </div>

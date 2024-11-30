@@ -150,7 +150,13 @@ const ProductCard = ({ product }) => {
         {/* Add to Cart Button */}
         <button
             className="add-to-cart-button"
-            onClick={() => window.open('https://m.me/61561870003784', '_blank')}
+            onClick={() => {
+              const encodedProductName = encodeURIComponent(productName);
+              const preFilledMessage = encodeURIComponent(`Hi, I'm interested in the product: ${productName}`);
+              const chatUrl = `https://m.me/61561870003784?ref=${encodedProductName}&message=${preFilledMessage}`;
+          
+              window.open(chatUrl, '_blank');
+            }}
             >
              <FaFacebookMessenger style={{ marginRight: '8px' }}/> Chat With Us
         </button>
