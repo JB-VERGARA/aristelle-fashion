@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: space-between; /* Ensures space between elements */
   overflow: hidden; /* Prevent overflow of content */
+  margin-bottom: 3px;
 }
 
 .product-card:hover {
