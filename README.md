@@ -24,9 +24,16 @@ Our product line features a wide range of bracelets, made from carefully selecte
 
 - **npm (Node Package Manager)**: Used to manage dependencies for the project.
 
+
 ## Project Overview
 
-The website serves as a dynamic landing page designed to represent the brand and its products effectively. It features a visually appealing banner at the top, followed by a well-organized display of products to showcase the offerings. Visitors can explore the product catalog in detail. The site also includes a dedicated "About Us" section to highlight the business's mission and values, along with a "Contact Us" page to facilitate seamless communication with potential customers.
+The website serves as a dynamic landing page designed to represent the brand and its products effectively. It features a visually appealing banner at the top, followed by a well-organized display of products to showcase the offerings. Visitors can explore the product catalog in detail. The site also includes a dedicated "About Us" section to highlight the business's information, along with a "Contact Us" page to facilitate seamless communication with potential customers.
+
+### Additional Functionalities
+
+- **SEO Optimization**: The site is optimized for search engines to improve its visibility and ranking, ensuring potential customers can easily find Aristelle Fashion online.
+
+- **Direct-to-Messenger:**: Integrated functionality for customers to connect directly with Aristelle Fashion via messaging platforms, enhancing communication and customer support.
 
 ## Getting Started
 ------------------------------------------------------------------------
