@@ -62,7 +62,7 @@ const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
         <section className="about-us-testimonials">
           <h2>What Our Customers Are Saying</h2>
           <blockquote>"Can’t get enough of Aristelle, already thinking about what to add next to my collection!" - Nathalie M.</blockquote>
-          <blockquote>"These jewelry pieces have added such a unique touch to my collection. Highly recommend!" - Mark R.</blockquote>
+          <blockquote>"These bracelets have added such a unique touch to my collection. Highly recommend!" - Clarissa R.</blockquote>
         </section>
       </div>
       <Footer />
