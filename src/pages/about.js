@@ -41,7 +41,7 @@ const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
             </div>
             <div className="team-member">
             <img src="\images\cofounder.jpg" alt="Team Member 1" />
-              <h3>John Bryan B. Vergara</h3>
+              <h3>John Bryan Vergara</h3>
               <p>Co-Founder</p>
             </div>
           </div>
