@@ -56,6 +56,7 @@
 
 .colors {
   margin-bottom: 1rem;
+
 }
 
 .color-tag {
@@ -937,7 +938,7 @@
 }
 
 .about-us-team {
-  margin-top: 60px; 
+  margin-top: 70px; 
   text-align: center;
 }
 
@@ -951,6 +952,7 @@
 .team-member {
   width: 200px;
   text-align: center;
+  margin: 30px;
 }
 
 .team-member img {

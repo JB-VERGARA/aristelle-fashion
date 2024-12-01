@@ -20,6 +20,7 @@ export async function getStaticProps() {
       logo,
       banner, // Ensure the banner field is passed correctly
     },
+    revalidate: 60,
   };
 }
 

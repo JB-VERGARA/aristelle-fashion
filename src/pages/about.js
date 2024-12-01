@@ -61,7 +61,7 @@ const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
         {/* Testimonials */}
         <section className="about-us-testimonials">
           <h2>What Our Customers Are Saying</h2>
-          <blockquote>"The craftsmanship of Aristelle Fashion pieces is unparalleled. I get compliments on my necklace all the time!" - Sarah L.</blockquote>
+          <blockquote>"Can’t get enough of Aristelle, already thinking about what to add next to my collection!" - Nathalie M.</blockquote>
           <blockquote>"These jewelry pieces have added such a unique touch to my collection. Highly recommend!" - Mark R.</blockquote>
         </section>
       </div>

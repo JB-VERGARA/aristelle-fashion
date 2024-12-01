@@ -100,30 +100,32 @@ const ProductCard = ({ product }) => {
       {/* Price */}
       <p className="price">₱ {price}</p>
 
-      {/* Colors */}
-      <div className="colors">
-        <span>Colors:</span>
-        {colors.split(',').map((color, index) => { // Limit to 3 colors
-          const colorName = getColorName(color.trim()); // Get the color name from hex
-          return (
-            <span
-              key={index}
-              className="color-tag"
-              style={{
-                backgroundColor: color.trim(),
-                color: isLightColor(color.trim()) ? '#000' : '#fff', // Set text color based on brightness
-                padding: '2px 8px',
-                borderRadius: '4px',
-                border: '1px solid black',
-                margin: '5px',
-                display: 'inline-block',
-              }}
-            >
-              {colorName} {/* Display color name */}
-            </span>
-          );
-        })}
-      </div>
+        {/* Colors */}
+        <div className="colors">
+          <span>Available Colors:</span>
+          <div className="color-tags-container">
+            {colors.split(',').map((color, index) => {
+              const colorName = getColorName(color.trim()); // Get the color name from hex
+              return (
+                <span
+                  key={index}
+                  className="color-tag"
+                  style={{
+                    backgroundColor: color.trim(),
+                    color: isLightColor(color.trim()) ? '#000' : '#fff', // Set text color based on brightness
+                    padding: '2px 8px',
+                    borderRadius: '4px',
+                    border: '1px solid black',
+                    margin: '5px',
+                    display: 'inline-block',
+                  }}
+                >
+                  {colorName} {/* Display color name */}
+                </span>
+              );
+            })}
+          </div>
+        </div>
 
       {/* Tags */}
       <div className="tags">
