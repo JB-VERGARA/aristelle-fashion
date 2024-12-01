@@ -41,6 +41,7 @@ export default function Home({ products, businessName, businessDescription, logo
               }}
           />
         <title>Aristelle Fashion - Crafting Trends, Inspiring Confidence.</title>
+        <meta name="google-site-verification" content="eU05SCy7JTfBe91SugzZRIAj4i-k_3RYStozFCv2V58" />
         <meta name="description" content={businessDescription} />
         <meta name="keywords" content="fashion, bracelets, exclusive collection, products, beads, charms" />
         <meta name="author" content={`${businessName}, John Bryan B. Vergara, Niña Mae C. Ramirez`} />

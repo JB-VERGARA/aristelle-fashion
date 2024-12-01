@@ -34,6 +34,7 @@ const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
               }}
           />
         <title>About Aristelle Fashion - Learn About Our Journey</title>
+        <meta name="google-site-verification" content="eU05SCy7JTfBe91SugzZRIAj4i-k_3RYStozFCv2V58" />
         <meta name="description" content={businessDescription} />
         <meta name="keywords" content={`${businessName}, About Us, Handcrafted Bracelets, Fashion`} />
         <meta name="author" content={`${businessName}, John Bryan B. Vergara, Niña Mae C. Ramirez`} />
