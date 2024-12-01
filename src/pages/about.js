@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -20,6 +21,27 @@ export async function getStaticProps() {
 const AboutUs = ({ businessName, businessDescription, tagline, logo }) => {
   return (
     <div className="about-us-page">
+      <Head>
+      <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "name": "Aristelle Fashion",
+                  "url": "https://aristelle-fashion.vercel.app/about",
+                }),
+              }}
+          />
+        <title>About Aristelle Fashion - Learn About Our Journey</title>
+        <meta name="description" content={businessDescription} />
+        <meta name="keywords" content={`${businessName}, About Us, Handcrafted Bracelets, Fashion`} />
+        <meta name="author" content={`${businessName}, John Bryan B. Vergara, Niña Mae C. Ramirez`} />
+        <meta property="og:title" content={`About ${businessName}`} />
+        <meta property="og:description" content={businessDescription} />
+        <meta property="og:image" content={logo} />
+        <meta property="og:url" content="https://aristelle-fashion.vercel.app/about" />
+      </Head>
       <Header businessName={businessName} logo={logo} />
       <div className="about-us-content">
         <section className="about-us-header">
