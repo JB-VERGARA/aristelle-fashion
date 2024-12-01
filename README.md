@@ -12,8 +12,6 @@ Our product line features a wide range of bracelets, made from carefully selecte
   
 - **React**: A JavaScript library for building user interfaces. React is used for the interactive components of the site.
 
-- **Tailwind CSS**: A utility-first CSS framework for creating responsive, customizable designs quickly. Tailwind is used to style the website.
-
 ### Backend
 
 - **Contentful**: A headless CMS that allows us to manage and deliver content, such as products, descriptions, and images. Contentful is used to manage the content displayed on the website.
