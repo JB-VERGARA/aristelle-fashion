@@ -29,7 +29,7 @@ const hexToColorName = {
 
 // Function to get a human-readable color name from hex code
 const getColorName = (hex) => {
-  return hexToColorName[hex] || "Custom Color"; // Return custom color name if not in mapping
+  return hexToColorName[hex]; // Return custom color name if not in mapping
 };
 
 // Helper function to determine if the color is light or dark
@@ -102,8 +102,8 @@ const ProductCard = ({ product }) => {
 
       {/* Colors */}
       <div className="colors">
-        <span>Available Colors:</span>
-        {colors.split(',').map((color, index) => {
+        <span>Colors:</span>
+        {colors.split(',').map((color, index) => { // Limit to 3 colors
           const colorName = getColorName(color.trim()); // Get the color name from hex
           return (
             <span
@@ -111,10 +111,11 @@ const ProductCard = ({ product }) => {
               className="color-tag"
               style={{
                 backgroundColor: color.trim(),
-                color: isLightColor(color.trim()) ? '#000' : '#fff',  // Set text color based on brightness
+                color: isLightColor(color.trim()) ? '#000' : '#fff', // Set text color based on brightness
                 padding: '2px 8px',
                 borderRadius: '4px',
-                margin: '0 4px',
+                border: '1px solid black',
+                margin: '5px',
                 display: 'inline-block',
               }}
             >
