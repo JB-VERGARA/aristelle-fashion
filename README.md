@@ -59,9 +59,17 @@ npm run dev
 
 Visit http://localhost:3000 to view the site locally.
 
+
 ------------------------------------------------------------------------
 
 
 ### Contributing
 
 We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel free to fork the repository, create a branch, and submit a pull request.
+
+### NEWS
+New Product Alert!
+𝙁𝙡𝙤𝙧𝙖𝙡 𝙍𝙞𝙣𝙜𝙨 🦋💐
+Delicate blooms at your fingertips – handcrafted beaded floral rings for a touch of nature's beauty. 
+🔖: 10 pesos each
+📝: Customizable size and color.
