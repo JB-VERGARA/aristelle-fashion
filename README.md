@@ -72,7 +72,13 @@ We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel
 
 ### New Product Alert
 
-𝙁𝙡𝙤𝙧𝙖𝙡 𝙍𝙞𝙣𝙜𝙨 🦋💐
-Delicate blooms at your fingertips – handcrafted beaded floral rings for a touch of nature's beauty. 
-🔖: 10 pesos each
-📝: Customizable size and color.
+𝙀𝙡𝙖𝙞𝙣𝙚 — a personalized keychain charm crafted with a mixture of flower and butterfly beads. 🎀✨️🦋
+
+Perfect for a soft and graceful touch of your everyday look. 👜
+
+✨️ Available Colors:
+- Pink
+- Purple
+- Blue
+- Yellow
+- Green
