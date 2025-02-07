@@ -70,15 +70,8 @@ We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel
 
 ## Aristelle Fashion News!!!
 
-### New Product Alert
+### New Product Alert (As of Feb 7, 2025)
 
-𝙀𝙡𝙖𝙞𝙣𝙚 — a personalized keychain charm crafted with a mixture of flower and butterfly beads. 🎀✨️🦋
+Fleur & Elsie Keychains
 
-Perfect for a soft and graceful touch of your everyday look. 👜
 
-✨️ Available Colors:
-- Pink
-- Purple
-- Blue
-- Yellow
-- Green
