@@ -1,4 +1,4 @@
-# Aristelle Fashion
+no# Aristelle Fashion
 
 Aristelle Fashion is a fashion business founded by Niña Mae Ramirez and John Bryan B. Vergara. We specialize in high-quality, handcrafted bracelets that are designed to be timeless, elegant, and versatile. Our mission is to provide our customers with unique, customizable pieces that complement their personal style.
 
@@ -72,6 +72,8 @@ We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel
 
 ### New Product Alert (As of Feb 7, 2025)
 
-Fleur & Elsie Keychains
+RELEASE:
+Fleur Keychains
+Elsie Keychains
 
 
