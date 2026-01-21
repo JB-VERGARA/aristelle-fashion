@@ -72,7 +72,7 @@ We welcome contributions to Aristelle Fashion. If you'd like to contribute, feel
 
 ### New Product Alert (As of Feb 7, 2025)
 
-2 New Keychain Release:
+New Keychain Release:
 Fleur 
 Elsie
 
